@@ -35,29 +35,7 @@ app.use(session({
     secure : true
 }));
 
-/* catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
-
-//database code
-
-
-*/
 
 
 
@@ -269,10 +247,7 @@ app.post('/process_post3', urlencodedParser, function (req, res) {
     //console.log(response3);
     register3(response3,req,res);
 
- //   res.render('Todo',{uname:req.session.mail,tasks:jan});
 
-    // res.end(JSON.stringify(response3));
-  // res.redirect("/process_post3");
 });
 
 
